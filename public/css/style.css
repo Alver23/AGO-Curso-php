@@ -1,0 +1,41 @@
+.container {
+	width: 500px;
+	height: 100%;
+	background-color: rgba(229,229,229,0.5);
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 15px;
+}
+.form-control {
+	position: relative;
+	margin: 10px auto;
+}
+
+.form-control label {
+	display: block;
+	margin: 5px auto;
+}
+
+.form-control input {
+	position: relative;
+	width: 100%;
+	border: 1px solid #FFF;
+	border-radius: 4px;
+}
+
+.btn {
+	position: relative;
+	display: block;
+	margin: 5px auto;
+	padding: 5px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.btn.btn-blue {
+	background-color: rgb(45,92,138);
+	color: #FFF;
+}
+.btn.btn-blue:hover {
+	background-color: red;
+}
