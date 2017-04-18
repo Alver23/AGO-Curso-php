@@ -1,8 +1,18 @@
+<?php
+require_once "config/connection.php";
+$con = connect();
+$sql = $con->query("SELECT id, name, email FROM users");
+if ($sql->num_rows > 0) {
+	//print "<pre>";
+	//print_r($sql->fetch_all(MYSQLI_ASSOC));
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="public/css/style.css?v=0.1.0">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css?v=0.2.0">
 </head>
 <body>
 <div class="container">
