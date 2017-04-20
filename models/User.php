@@ -1,13 +1,14 @@
 <?php
+require_once "../config/connection.php";
 
 function login($email, $password)
 {
-	if ($email === 'admin@agoitsolutions.com' && $password === '12345') {
-		return [
-			'name' => 'Alver Grisales',
-			'email' => 'admin@agoitsolutions.com',
-			'profile' => 'Administrador',
-		];
-	}
-	return [];
+	$con = connect();
+	$sql = sprintf("SELECT * FROM users WHERE email = '%s' AND password = '%s'", $email, $password);
+	// print $sql."<br>";
+	$result = $con->query($sql);
+	return $result;
 }
+
+// %s => Variable string
+// %d => Variable entera

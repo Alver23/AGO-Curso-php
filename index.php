@@ -1,13 +1,3 @@
-<?php
-require_once "config/connection.php";
-$con = connect();
-$sql = $con->query("SELECT id, name, email FROM users");
-if ($sql->num_rows > 0) {
-	//print "<pre>";
-	//print_r($sql->fetch_all(MYSQLI_ASSOC));
-}
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +6,7 @@ if ($sql->num_rows > 0) {
 </head>
 <body>
 <div class="container">
-	<form method="post" action="">
+	<form method="post" action="controllers/UserController.php">
 		<div class="form-control">
 			<label>Email:</label>
 			<input type="email" name="email">
