@@ -15,7 +15,7 @@
 			<label>Password</label>
 			<input type="password" name="password">
 		</div>
-		<button type="submit" class="btn btn-blue">Login</button>
+		<button type="submit" class="btn btn-blue">Sign In</button>
 	</form>
 </div>
 </body>
